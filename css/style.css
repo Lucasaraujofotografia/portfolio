@@ -871,3 +871,45 @@ a:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* GALLERY CSS */
+
+.section_gallery {
+  width           : 100vw;
+  min-height      : 100vh;
+  background-color: #e4e4e4;
+}
+
+.section_gallery h2 {
+  font-weight   : bold;
+  text-transform: uppercase;
+  position      : relative;
+  padding-bottom: 7px;
+  color         : var(--preto);
+}
+
+.section_gallery h2::before {
+  content         : "";
+  position        : absolute;
+  bottom          : 0;
+  left            : 50%;
+  transform       : translateX(-50%);
+  width           : 45px;
+  height          : 5px;
+  background-color: var(--laranja);
+  border-radius   : 10px;
+}
+
+.voltar {
+  width          : 100vw;
+  position       : fixed;
+  height         : 50px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  bottom: 0;
+  background-color: var(--laranja);
+  color: var(--branco);
+}
